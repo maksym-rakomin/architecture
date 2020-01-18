@@ -243,7 +243,7 @@ function initMap() {
     marker = new google.maps.Marker({
         position: centerMarker,
         map: myMap,
-        icon: '../img/PinPng.png'
+        icon: popup
     });
 
     myMap.setOptions({styles: myStyles});
