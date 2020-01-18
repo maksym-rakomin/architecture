@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Architecture</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img class="nav__logo-img" src="img/Logo.png" alt="logo">
+                </div>
+                <ul class="nav__links">
+                    <li class="nav__link-box">
+                        <a href="#about" class="nav__link active">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav__link-box">
+                        <a href="#projects" class="nav__link">
+                            projects
+                        </a>
+                    </li>
+                    <li class="nav__link-box">
+                        <a href="#news" class="nav__link">
+                            news
+                        </a>
+                    </li>
+                    <li class="nav__link-box">
+                        <a href="#contact" class="nav__link">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__socials">
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-slider">
+            <div class="slide">
+                <div class="header__cover" style="background-image: url(img/header.jpg);">
+                    <div class="header__center-box">
+                        <h1 class="header__title">Simple & mordern №1</h1>
+                        <div class="header__subtitle">We make the world's beautiful every day</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="header__cover" style="background-image: url(img/header-2.jpg);">
+                    <div class="header__center-box">
+                        <h1 class="header__title">Simple & mordern №2</h1>
+                        <div class="header__subtitle">We make the world's beautiful every day</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="header__cover" style="background-image: url(img/header-3.jpg);">
+                    <div class="header__center-box">
+                        <h1 class="header__title">Simple & mordern №3</h1>
+                        <div class="header__subtitle">We make the world's beautiful every day</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="header__cover" style="background-image: url(img/header-4.jpg);">
+                    <div class="header__center-box">
+                        <h1 class="header__title">Simple & mordern №4</h1>
+                        <div class="header__subtitle">We make the world's beautiful every day</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="header__cover" style="background-image: url(img/header-5.jpg);">
+                    <div class="header__center-box">
+                        <h1 class="header__title">Simple & mordern №5</h1>
+                        <div class="header__subtitle">We make the world's beautiful every day</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__scroll">
+            <a href="#projects" class="header__scroller"></a>
+        </div>    
+    </header>
+    <main>
+        <section id="about" class="section what">
+            <div class="container">
+                <h2 class="section__title">what we do</h2>
+                <section class="section__box trade">
+                    <div class="flex-wrap">                        
+                        <div class="section__img-wrap section__img-shadow">
+                            <img class="section__img" src="img/trade-center.jpg" alt="Trade center">
+                        </div>
+                        <div class="section__info">
+                            <h4 class="section__subtitle">one world</h4>
+                            <h3 class="section__title section__title--ta-left section__title--mb-45">trade center</h3>
+                            <div class="section__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</div>
+                            <button class="btn">more details</button>
+                            <a class="section__adress" href="#"><i class="fas fa-map-marker-alt"></i><span>New York City, United States - 1776 feet</span></a>                        
+                        </div>
+                    </div>
+                </section>
+                <section class="section__box comemrce">
+                    <div class="flex-wrap">                        
+                        <div class="section__info section__info--revers">
+                            <h4 class="section__subtitle">international</h4>
+                            <h3 class="section__title section__title--ta-left section__title--mb-45">commerce center</h3>
+                            <div class="section__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</div>
+                            <button class="btn">more details</button>
+                            <a class="section__adress" href="#"><i class="fas fa-map-marker-alt"></i><span>Hong Kong - 1588 Feet</span></a>                        
+                        </div>
+                        <div class="section__img-wrap section__img-shadow">
+                            <img class="section__img" src="img/commerce.jpg" alt="Commerce center">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="news" class="section news" style="background-image: url(img/bg-news.jpg);">
+            <div class="container container--30px">
+                <h2 class="section__title section__title--white section__title--mb-100">latest news</h2>
+                <div class="news-slider">
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-1.jpg" alt="See The Unmatched Beauty Of The Great. Lakes.">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">See The Unmatched Beauty Of The Great. Lakes.</h4>
+                                    <div class="news__text">Free directories: directories are perfect for customers that are... searching for a </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-1.jpg" alt="Isaac Dunn" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Isaac Dunn</div>                                        
+                                    <time class="news__data" datetime="2017-02-15 12:00">09 Feb 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-2.jpg" alt="See The Unmatched Beauty Of The Great. Lakes.">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">Effective Advertising Pointers.</h4>
+                                    <div class="news__text">Having a home based business is a wonderful asset to your life...</div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-2.jpg" alt="Isaac Dunn" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Isaac Dunn</div> 
+                                    <time class="news__data" datetime="2017-02-15 12:00">09 Feb 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-2.jpg" alt="Effective Advertising Pointers">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">Effective Advertising Pointers.</h4>
+                                    <div class="news__text">Having a home based business is a wonderful asset to your life...</div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-2.jpg" alt="Dominic Freeman" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Dominic Freeman</div> 
+                                    <time class="news__data" datetime="2017-04-15 12:00">09 Apr 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-3.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">Hypnotize Yourself Into The Ghost.
+                                        Of Christmas Future</h4>
+                                    <div class="news__text">There are many things that are important to catalog design....</div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-1.jpg" alt="Alice Ward" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Alice Ward</div>                                        
+                                    <time class="news__data" datetime="2017-12-15 12:00">09 Dec 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-1.jpg" alt="See The Unmatched Beauty Of The Great. Lakes.">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">See The Unmatched Beauty Of The Great. Lakes.</h4>
+                                    <div class="news__text">Free directories: directories are perfect for customers that are... searching for a </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-1.jpg" alt="Isaac Dunn" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Isaac Dunn</div>                                        
+                                    <time class="news__data" datetime="2017-02-15 12:00">09 Feb 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-2.jpg" alt="Effective Advertising Pointers">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>  
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">Effective Advertising Pointers.</h4>
+                                    <div class="news__text">Having a home based business is a wonderful asset to your life...</div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-2.jpg" alt="Dominic Freeman" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Dominic Freeman</div>     
+                                    <time class="news__data" datetime="2017-04-15 12:00">09 Apr 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="news__card">
+                            <a href="#" class="news__post">
+                                <div class="news__img-box">
+                                    <img class="news__img" src="img/new-3.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                                    <div class="news__overlay">
+                                        <svg class="header__svg" width="81px" height="81px">
+                                            <use xlink:href="#hover"/>
+                                        </svg>                                    
+                                    </div>
+                                </div>
+                                <div class="news__description">
+                                    <h4 class="news__title">Hypnotize Yourself Into The Ghost.
+                                        Of Christmas Future</h4>
+                                    <div class="news__text">There are many things that are important to catalog design....</div>
+                                </div>
+                            </a>
+                            <a href="#" class="news__attribute flex-wrap flex-wrap--jc-start">
+                                <div class="news__avatar-box">
+                                    <img src="img/author-1.jpg" alt="Alice Ward" class="news__avatar">
+                                </div>
+                                <div class="news__author">
+                                    <div class="news__name">Alice Ward</div>  
+                                    <time class="news__data" datetime="2017-12-15 12:00">09 Dec 2017</time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section gallery">
+            <div class="container">
+                <h2 class="section__title section__title--mb-100">gallery</h2>
+                <div class="grid">
+                    <a href="#" class="news__img-box grid-col-2 grid-row-2">
+                        <img class="news__img" src="img/gallery-1.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                        <div class="news__overlay">
+                            <svg class="header__svg" width="80px" height="80px">
+                                <use xlink:href="#grad"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="news__img-box">
+                        <img class="news__img" src="img/gallery-2.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                        <div class="news__overlay">
+                            <svg class="header__svg" width="80px" height="80px">
+                                <use xlink:href="#grad"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="news__img-box">
+                        <img class="news__img" src="img/gallery-3.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                        <div class="news__overlay">
+                            <svg class="header__svg" width="80px" height="80px">
+                                <use xlink:href="#grad"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="news__img-box">
+                        <img class="news__img" src="img/gallery-4.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                        <div class="news__overlay">
+                            <svg class="header__svg" width="80px" height="80px">
+                                <use xlink:href="#grad"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="#" class="news__img-box">
+                        <img class="news__img" src="img/gallery-5.jpg" alt="Hypnotize Yourself Into The Ghost.">
+                        <div class="news__overlay">
+                            <svg class="header__svg" width="80px" height="80px">
+                                <use xlink:href="#grad"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <button class="btn btn--center">see more</button>
+            </div>
+        </section>
+        <section class="map-and-contact">
+            <section class="map" id="map">
+            </section>
+            <section id="contact" class="form">
+                    <h2 class="section__title section__title--mb-45">get in touch</h2>
+                    <div class="flex-wrap flex-wrap--ai-start">
+                        <div class="section__contacts">
+                            <ul class="section__contact-box">
+                                <li class="section__contact">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>91 Nolan Extensions Suite 670</span>
+                                </li>
+                                <li class="section__contact">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+001 356-868-2454</span>
+                                </li>
+                                <li class="section__contact">
+                                    <i class="fas fa-inbox"></i>
+                                    <span>gahuy93@gmail.com</span>
+                                </li>
+                                <li class="section__contact">
+                                    <i class="far fa-clock"></i>
+                                    <span>From 07:05AM to 19:30PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="#" class="section__form " method="POST"> <!--!!flex-column!!-->
+                            <input class="section__input" type="text" name="name" id="name" placeholder="Name" required>
+                            <input class="section__input" type="email" name="email" id="email" placeholder="Email" required>
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                    </div>
+                </section>
+        </section>
+    </main>
+    <footer class="footer" style="background-image: url(img/footer.jpg);">
+        <div class="container container--770px">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img class="nav__logo-img" src="img/Logo.png" alt="logo">
+                </div>
+                <ul class="nav__socials">
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__social-box">
+                        <a href="#" class="nav__social">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">
+                <a href="#" class="footer__link">Copyrights <i class="far fa-copyright"></i> 2017 Monticello Group</a>
+                <a href="#" class="footer__link">Made with <i class="fas fa-heart"></i> by Ga Huy</a>
+            </div>
+        </div>
+    </footer>
+
+    <svg style="display: none;">
+        <symbol id="hover">           
+                <circle class="cls-1" cx="40.5" cy="40.5" r="40"/>
+                <path class="cls-2" d="M389,2865h23v1H389v-1Zm11-11h1v23h-1v-23Z" transform="translate(-359.5 -2824.5)"/>
+        </symbol>
+
+        <symbol id="grad">
+                <image id="icon-360.svg" width="80" height="80" xlink:href="data:img/png;base64,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"/>
+        </symbol>
+    </svg>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCub7pKRDZju62_aRtGlmMtl-T1LBthZL4&callback=initMap"
+    async defer></script>
+    <script src="https://kit.fontawesome.com/8c5aa2b921.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/scripts-map.js"></script>
+</body>
+</html>

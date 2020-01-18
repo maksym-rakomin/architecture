@@ -1,0 +1,17 @@
+<svg id="icon-hover.svg" xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="40.5" cy="40.5" r="40"/>
+  <path class="cls-2" d="M389,2865h23v1H389v-1Zm11-11h1v23h-1v-23Z" transform="translate(-359.5 -2824.5)"/>
+</svg>

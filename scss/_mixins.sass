@@ -1,0 +1,32 @@
+@mixin text ($color: inherit, $family: inherit, $size: 1.6rem, $weight: 400, $line: 1.7)
+  color: $color
+  font-family: $family
+  font-size: $size
+  font-weight: $weight
+  line-height: $line
+
+@mixin tr ($all: all, $time: .4s, $who: ease) 
+  transition: $all $time $who 
+
+@mixin hover 
+  @include tr()
+  &:hover,
+  &:focus, 
+  &:active
+    @content
+
+@mixin posCenter 
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  
+@mixin posAbs ($top: auto, $left: auto, $right: auto, $bottom: auto )
+  position: absolute
+  top: $top
+  left: $left
+  right: $right
+  bottom: $bottom
+
+@mixin o($color: red)
+  outline: 1px solid $color
