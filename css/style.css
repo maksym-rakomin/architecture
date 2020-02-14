@@ -493,9 +493,6 @@ a {
   .btn:hover, .btn:focus, .btn:active {
     background-color: #2c4058;
     color: #fff; }
-  .btn--center {
-    margin: 0 auto;
-    display: block; }
 
 .header-slider {
   position: relative; }
@@ -591,8 +588,7 @@ button {
   font-size: 8rem;
   font-family: "Gotham Bold", sans-serif;
   margin: 0;
-  height: 10.5rem;
-  overflow: hidden;
+  line-height: 1.1;
   padding: 0 100px; }
 
 .header__subtitle {
@@ -615,10 +611,11 @@ button {
   -webkit-transition: all .25s ease-in;
   -o-transition: all .25s ease-in;
   transition: all .25s ease-in;
+  outline: 0;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease; }
-  .header__scroller:hover, .header__scroller:focus, .header__scroller:active {
+  .header__scroller:hover, .header__scroller:active {
     border-color: #ffffffab;
     background-position: center bottom; }
   .header__scroller--rotate-left {
@@ -958,9 +955,12 @@ button {
   -webkit-box-shadow: -299px -68px 0 0 #55b7ff;
   box-shadow: -299px -68px 0 0 #55b7ff; }
 
-.comemrce .section__img {
+.commerce .section__img {
   -webkit-box-shadow: 299px -68px 0 0 #7e5aff;
   box-shadow: 299px -68px 0 0 #7e5aff; }
+
+.gallery {
+  text-align: center; }
 
 .footer {
   padding: 200px 0;

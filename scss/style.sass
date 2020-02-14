@@ -74,11 +74,6 @@ a
     @include hover
         background-color: $text-title
         color: $white
-    &--center
-        margin: 0 auto
-        display: block
-
-
 
 .header-slider
     position: relative
@@ -160,8 +155,7 @@ button
         font-size: 8rem
         font-family: $bold-font
         margin: 0
-        height: 10.5rem
-        overflow: hidden
+        line-height: 1.1
         padding: 0 100px
 
     &__subtitle
@@ -181,7 +175,8 @@ button
         border-radius: 50%
         background: url('../img/arrow.png') no-repeat center
         transition: all .25s ease-in
-        @include hover
+        outline: 0
+        @include hover-no-focus
             border-color: $white-opacity
             background-position: center bottom
         &--rotate-left
@@ -488,8 +483,11 @@ button
     box-shadow: -299px -68px 0 0 $blue
 
     
-.comemrce .section__img
+.commerce .section__img
     box-shadow: 299px -68px 0 0 $purpl
+
+.gallery
+    text-align: center
 
 .footer
     padding: 200px 0

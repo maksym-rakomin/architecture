@@ -29,8 +29,8 @@ $(document).ready(function() {
         autoplaySpeed: 4000,
         dots: true,
         arrows: true,
-        prevArrow: `<a href="#" class="header__scroller header__scroller--rotate-left"></a>`,
-        nextArrow: `<a href="#" class="header__scroller header__scroller--rotate-right"></a>`,
+        prevArrow: '<button class="header__scroller header__scroller--rotate-left"></button>',
+        nextArrow: '<button class="header__scroller header__scroller--rotate-right"></button>',
         pauseOnFocus: true,
 
       });
