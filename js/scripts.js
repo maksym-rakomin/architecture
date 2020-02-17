@@ -4,11 +4,9 @@ $(document).ready(function() {
         arrows: false,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnFocus: true,
-        fade: true,
-        // vertical: true,
-        // verticalSwiping: true,  
+        autoplaySpeed: 1000,
+        pauseOnFocus: false,
+        fade: true, 
     });
 
     $(document).on('keydown', function(e) {
@@ -32,6 +30,31 @@ $(document).ready(function() {
         prevArrow: '<button class="header__scroller header__scroller--rotate-left"></button>',
         nextArrow: '<button class="header__scroller header__scroller--rotate-right"></button>',
         pauseOnFocus: true,
+        responsive: [
+            {
+              breakpoint: 880,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            // {
+            //   breakpoint: 600,
+            //   settings: {
+            //     slidesToShow: 2,
+            //     slidesToScroll: 1
+            //   }
+            // },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
 
       });
 

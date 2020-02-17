@@ -30,6 +30,7 @@ a
     position: relative
     &--30px
         max-width: 1200px
+        width: calc( 100% - ((45px + 1rem) * 2))
     &--770px
         max-width: 770px
 
@@ -241,16 +242,19 @@ button
 
     &__socials
         list-style: none
-        min-width: 160px
         padding: 0
         margin: 0
         font-size: 1.4rem
-        display: flex
-        justify-content: space-between
-        align-items: center
+        display: inline-block
+        flex: 0 1 200px
+        &--footer
+            flex: 1 1 200px
 
     &__social-box
         display: inline-block
+        margin-left: 10%
+        width: 3rem
+        height: 3rem
 
     &__social
         width: 3rem
@@ -521,7 +525,7 @@ button
 
 
     & .nav
-        position: relative
+        position: static
         padding: 0
 
 .map-and-contact
@@ -553,3 +557,5 @@ button
     fill-rule: evenodd
                     
 
+
+@import 'media'
