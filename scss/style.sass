@@ -41,7 +41,7 @@ a
     &--jc-start
         justify-content: flex-start
     &--ai-start
-        align-items: start
+        align-items: flex-start
 
 .flex-column
         display: flex
@@ -79,9 +79,6 @@ a
 .toggle
     font-size: 3rem
     display: none
-
-// .overflow-y-hidden
-//     overflow-y: hidden
 
 .header-slider
     position: relative
@@ -142,7 +139,6 @@ button
 
 
 .header
-    // position: relative
 
     &__cover
         min-height: 100vh
@@ -315,7 +311,6 @@ button
 
     &__img-wrap
         width: 54%
-        // flex: 54%
         position: relative
 
     &__img
@@ -325,7 +320,6 @@ button
         object-fit: cover
 
     &__info
-        // width: 46%
         flex-basis: 46%
         padding: 5px 5px 5px 70px
         &--revers
@@ -359,12 +353,6 @@ button
         min-height: 175px
         text-align: right
 
-        // display: flex
-        // flex-direction: column
-        // justify-content: space-between
-        // align-self: flex-start
-        // height: 100%
-
     &__input
         outline: none
         border: none
@@ -396,9 +384,7 @@ button
             margin-right: 5px
     &__adress-link
         display: inline-block
-        width: 80%
-        // height: 2rem
-        // overflow: hidden
+        max-width: 90%
 
 .news
     position: relative
@@ -410,7 +396,6 @@ button
 
     &__img-box
         width: 100%
-        // height: 240px
         position: relative
         padding-top: 65%
         overflow: hidden
@@ -502,7 +487,6 @@ button
         color: $white
         font-size: 1.4rem
         padding: 1px 20px
-        // max-width: 40%
         flex: 0 1 40%
         position: relative
         @include hover
