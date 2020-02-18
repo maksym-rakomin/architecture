@@ -31,33 +31,32 @@ $(document).ready(function() {
         nextArrow: '<button class="header__scroller header__scroller--rotate-right"></button>',
         pauseOnFocus: true,
         responsive: [
-            {
-              breakpoint: 880,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-              }
-            },
-            // {
-            //   breakpoint: 600,
-            //   settings: {
-            //     slidesToShow: 2,
-            //     slidesToScroll: 1
-            //   }
-            // },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+          {
+            breakpoint: 880,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
             }
-          ]
-
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          }
+        ]
+        
       });
-
+      
 /*Скролл*/
     let $page = $('html');
 
@@ -66,4 +65,22 @@ $(document).ready(function() {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000, "swing");
     });
-})
+});
+
+// скрипт открывания и закрывания меню 
+(function() {
+  'use strict';
+
+  let navMenu = document.querySelector('.nav__links'),
+      nav  = document.getElementById('nav'),
+      toggle  = document.querySelector('.toggle'),
+      body    = document.body;
+
+      toggle.addEventListener('click', () => {
+          body.classList.toggle('open');
+        });
+        
+        navMenu.addEventListener('click', () => {
+          body.classList.remove('open');          
+      });
+})();

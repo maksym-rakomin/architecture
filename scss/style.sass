@@ -52,7 +52,7 @@ a
 .grid
     display: grid
     grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(2, 200px)
+    grid-template-rows: repeat(2, 1fr)
     grid-gap: 10px
     grid-auto-flow: dense
     margin-bottom: 60px
@@ -75,6 +75,13 @@ a
     @include hover
         background-color: $text-title
         color: $white
+
+.toggle
+    font-size: 3rem
+    display: none
+
+// .overflow-y-hidden
+//     overflow-y: hidden
 
 .header-slider
     position: relative
@@ -147,7 +154,6 @@ button
         background-size: cover
 
     &__center-box
-        min-width: 920px
         text-align: center
         text-transform: uppercase
         color: $white
@@ -157,11 +163,12 @@ button
         font-family: $bold-font
         margin: 0
         line-height: 1.1
-        padding: 0 100px
+        padding: 0 7.5%
 
     &__subtitle
         letter-spacing: 0.5rem
         font-family: $book-font
+        padding: 0 7.5%
 
     &__scroll
         position: absolute
@@ -182,15 +189,14 @@ button
             background-position: center bottom
         &--rotate-left
             position: absolute
-            left: -5%
+            left: -40px
             top: 45%
             transform: rotate(90deg) 
         &--rotate-right
             position: absolute
-            right: -5%
+            right: -40px
             top: 45%
             transform: rotate(270deg) 
-
 
 .nav
     color: $white
@@ -199,9 +205,6 @@ button
     left: 0
     right: 0
     padding-top: 40px
-    display: flex
-    justify-content: space-between
-    align-items: center
     font-size: 0
     z-index: 2
 
@@ -241,34 +244,27 @@ button
             background: #fff
 
     &__socials
-        list-style: none
         padding: 0
+        list-style: none
         margin: 0
-        font-size: 1.4rem
-        display: inline-block
-        flex: 0 1 200px
-        &--footer
-            flex: 1 1 200px
 
     &__social-box
-        display: inline-block
-        margin-left: 10%
-        width: 3rem
-        height: 3rem
+        margin-left: 2.5vw
 
     &__social
         width: 3rem
         height: 3rem
+        display: block
+        color: $white
+        font-size: 1.6rem
         display: flex
         justify-content: center
         align-items: center
-        border: 2px solid $white-opacity
-        color: $white
+        border: 1px solid $white
         border-radius: 50%
-        overflow: hidden
         @include hover
             background: $white
-            color: blue
+            color: $blue
 
 .active::before    
             background: #fff
@@ -319,15 +315,18 @@ button
 
     &__img-wrap
         width: 54%
+        // flex: 54%
         position: relative
 
     &__img
         width: 100%
         height: auto
         display: block
+        object-fit: cover
 
     &__info
-        width: 46%
+        // width: 46%
+        flex-basis: 46%
         padding: 5px 5px 5px 70px
         &--revers
             padding: 5px 70px 5px 0px
@@ -378,7 +377,8 @@ button
             border-color: $black
 
 
-    &__contact-box
+    &__contacts
+        width: 50%
         padding: 0
         margin: 0
         list-style: none
@@ -387,11 +387,6 @@ button
         padding: 0 5px 0 0
         font-weight: 700
         margin-bottom: 38px
-        & > span
-            display: inline-block
-            width: 80%
-            height: 2rem
-            overflow: hidden
         & > *
             vertical-align: middle
         &:last-child
@@ -399,6 +394,11 @@ button
         & > i
             color: $purpl
             margin-right: 5px
+    &__adress-link
+        display: inline-block
+        width: 80%
+        // height: 2rem
+        // overflow: hidden
 
 .news
     position: relative
@@ -500,10 +500,10 @@ button
     &__link
         display: inline-block
         color: $white
-        margin-top: 45px
         font-size: 1.4rem
         padding: 1px 20px
-        max-width: 40%
+        // max-width: 40%
+        flex: 0 1 40%
         position: relative
         @include hover
             &::before
@@ -515,13 +515,14 @@ button
                 top: auto
                 bottom: -10%
 
-                
 
         &:first-child
             padding-left: 0
         &:last-child
             border-left: 1px solid $white
             
+    &__copyright
+        margin-top: 45px
 
 
     & .nav
@@ -554,8 +555,7 @@ button
                     
               
 .cls-2 
-    fill-rule: evenodd
-                    
+    fill-rule: evenodd                    
 
 
 @import 'media'

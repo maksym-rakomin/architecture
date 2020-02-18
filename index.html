@@ -11,10 +11,13 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav flex-wrap">
+            <nav id="nav" class="nav flex-wrap">
                 <a href="#" class="nav__logo">
                     <img class="nav__logo-img" src="img/Logo.png" alt="logo">
                 </a>
+                <div class="toggle">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
                 <ul class="nav__links">
                     <li class="nav__link-box">
                         <a href="#about" class="nav__link active">
@@ -37,7 +40,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="nav__socials">
+                <ul class="nav__socials flex-wrap">
                     <li class="nav__social-box">
                         <a href="#" class="nav__social">
                             <i class="fab fa-facebook-f"></i>
@@ -108,7 +111,7 @@
                 <h2 class="section__title">what we do</h2>
                 <section class="section__box trade">
                     <div class="flex-wrap">                        
-                        <div class="section__img-wrap section__img-shadow">
+                        <div class="section__img-wrap">
                             <img class="section__img" src="img/trade-center.jpg" alt="Trade center">
                         </div>
                         <div class="section__info">
@@ -129,7 +132,7 @@
                             <a href="#" class="btn">more details</a>
                             <a class="section__adress" target="blanck" href="https://www.google.com/maps/place/%D0%93%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D0%B3%D1%81%D0%BA%D0%B8%D0%B9+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9/@22.2983945,114.1727464,14.61z/data=!4m13!1m7!3m6!1s0x3403e2eda332980f:0xf08ab3badbeac97c!2z0JPQvtC90LrQvtC90LM!3b1!8m2!3d22.3193039!4d114.1693611!3m4!1s0x340400ef324094cd:0x8246fa46504f6922!8m2!3d22.3018572!4d114.1773462"><i class="fas fa-map-marker-alt"></i><span>Hong Kong - 1588 Feet</span></a>                        
                         </div>
-                        <div class="section__img-wrap section__img-shadow">
+                        <div class="section__img-wrap">
                             <img class="section__img" src="img/commerce.jpg" alt="Commerce center">
                         </div>
                     </div>
@@ -391,27 +394,25 @@
             <section id="contact" class="form">
                     <h2 class="section__title section__title--mb-45">get in touch</h2>
                     <div class="flex-wrap flex-wrap--ai-start">
-                        <div class="section__contacts">
-                            <ul class="section__contact-box">
-                                <li class="section__contact">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <a target="blanck" href="https://www.google.com/maps/place/%D0%91%D1%80%D1%83%D0%BA%D0%BB%D0%B8%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6624477,-73.9322171,13z/data=!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579">91 Nolan Extensions Suite 670</a>
-                                </li>
-                                <li class="section__contact">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <a target="blanck" href="tel:011356-868-2454">+001 356-868-2454</a>
-                                </li>
-                                <li class="section__contact">
-                                    <i class="fas fa-inbox"></i>
-                                    <a target="blanck" href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a>
-                                </li>
-                                <li class="section__contact">
-                                    <i class="far fa-clock"></i>
-                                    <span>From 07:05AM to 19:30PM</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <form action="#" class="section__form " method="POST"> <!--!!flex-column!!-->
+                        <ul class="section__contacts">
+                            <li class="section__contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a class="section__adress-link" target="blanck" href="https://www.google.com/maps/place/%D0%91%D1%80%D1%83%D0%BA%D0%BB%D0%B8%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.6624477,-73.9322171,13z/data=!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579">91 Nolan Extensions Suite 670</a>
+                            </li>
+                            <li class="section__contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <a class="section__adress-link" target="blanck" href="tel:011356-868-2454">+001 356-868-2454</a>
+                            </li>
+                            <li class="section__contact">
+                                <i class="fas fa-inbox"></i>
+                                <a class="section__adress-link" target="blanck" href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a>
+                            </li>
+                            <li class="section__contact">
+                                <i class="far fa-clock"></i>
+                                <span class="section__adress-link">From 07:05AM to 19:30PM</span>
+                            </li>
+                        </ul>
+                        <form action="#" class="section__form " method="POST">
                             <input class="section__input" type="text" name="name" id="name" placeholder="Name" required>
                             <input class="section__input" type="email" name="email" id="email" placeholder="Email" required>
                             <button type="submit" class="btn">submit</button>
@@ -422,11 +423,11 @@
     </main>
     <footer class="footer" style="background-image: url(img/footer.jpg);">
         <div class="container container--770px">
-            <nav class="nav">
+            <nav class="nav flex-wrap">
                 <div class="nav__logo">
                     <img class="nav__logo-img" src="img/Logo.png" alt="logo">
                 </div>
-                <ul class="nav__socials nav__social--footer">
+                <ul class="nav__socials nav__social--footer flex-wrap">
                     <li class="nav__social-box">
                         <a href="#" class="nav__social">
                             <i class="fab fa-facebook-f"></i>
