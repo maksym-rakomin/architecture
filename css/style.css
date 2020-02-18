@@ -823,7 +823,6 @@ button {
     margin: 0;
     list-style: none; }
   .section__contact {
-    padding: 0 5px 0 0;
     font-weight: 700;
     margin-bottom: 38px; }
     .section__contact > * {
@@ -835,7 +834,7 @@ button {
       margin-right: 5px; }
   .section__adress-link {
     display: inline-block;
-    max-width: 90%; }
+    width: calc( 100% - 35px); }
 
 .news {
   position: relative;
@@ -1057,9 +1056,11 @@ button {
   .section {
     padding: 50px 0; }
     .section__title {
-      font-size: 3.8rem; }
+      font-size: 3.8rem;
+      padding: 0 5px; }
       .section__title--mb-45 {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        padding: 0; }
     .section__box {
       margin-top: 50px; }
     .section__text {
